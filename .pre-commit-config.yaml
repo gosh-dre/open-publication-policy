@@ -1,0 +1,21 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: check-added-large-files
+        name: Check for files larger than 5 MB
+        args: [ "--maxkb=5120" ]
+        fail_fast: true
+      - id: end-of-file-fixer
+        name: Check for a blank line at the end of scripts (auto-fixes)
+      - id: trailing-whitespace
+        name: Check for trailing whitespaces (auto-fixes)
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.2.0
+    hooks:
+      - id: detect-secrets
+        name: detect-secrets - Detect secrets in staged code
+        args: [ "--baseline", ".secrets.baseline" ]
+        exclude: .*/tests/.*

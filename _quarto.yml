@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: docs
+#  output-dir: docs
 
 book:
   title: "The GOSH 'Major Version' open publication process"
@@ -20,7 +20,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+#  pdf:
+#    documentclass: scrreprt
 
 editor: visual

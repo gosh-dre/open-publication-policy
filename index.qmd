@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+This report contains the processes agreed between the GOSH DRIVE data teams, GOSH Information Governance and GOSH ICT to enable the open publication of "major" versions of documentation and code developed within GOSH for public view. This report includes, in some instances, references to other processes and/or structures that are specific to GOSH, and thus are described in some detail.
+
+Please direct queries to [DRESupport\@gosh.nhs.uk](mailto:DRESupport@gosh.nhs.uk){.email}.

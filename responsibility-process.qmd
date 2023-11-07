@@ -1,0 +1,202 @@
+# "Major Version" Open Publication Responsibility Process {#sec-responsibility-process}
+
+## Version Control
+
+This document was approved as version 1.0 of the GOSH "Major Version" Open Publication Responsibility Process.
+
+## Introduction
+
+The purpose of this document is to instruct staff on the appropriate process for reviewing and authorising the open publication of code and documents by staff at Great Ormond Street Hospital for Children NHS Foundation Trust, and to aid the interpretation of requirements set forth in the Trust's policies.
+
+Supporting Trust policies:
+
+-   Confidentiality Policy
+-   Information Governance and Data Protection Policy
+-   Information Security Policy
+-   Acceptable Use of ICT
+-   Disciplinary Policy
+
+GOSH and NHSE do not currently have a published policy concerning Open Publication. Therefore, other relevant supporting material is referenced here:
+
+-   [DHSC "Data Saves Lives" Data Strategy -- June 2022](https://www.gov.uk/government/publications/data-saves-lives-reshaping-health-and-social-care-with-data/data-saves-lives-reshaping-health-and-social-care-with-data)
+-   ISMS P001/010 Software Development Standard
+-   [NHSX Open Source Policy Draft](https://github.com/nhsx/open-source-policy)
+-   [NHSD RAP community of practice](https://github.com/NHSDigital/rap-community-of-practice)
+
+The data teams in DRIVE and ICT will continue to work together to oversee and review this process, and adapt it to adhere to any future policies and/or regulations regarding open publication in the NHS.
+
+Where terms are highlighted they have a definition in the "Definitions" section of the document.
+
+## Scope
+
+The guidance herein applies to all repositories (code or documentary) maintained privately in the Trust, where no reason for maintaining privacy has been established (there is a presumption that all NHS documentation and code should be public, except where specific exclusions preclude the open publication of such documentation or code -- see DHSC "Data Saves Lives" Data Strategy).
+
+All open publication requests must be approved by an "**Authorised Approver**", a senior member of technical staff who has read and signed this declaration of responsibility for authorising open publication. This guidance therefore covers the standard operating procedure for authorising open publication and should be followed in response to any request for open publication of a private Trust repository.
+
+This guidance does not cover authorisation for "open coding" (development of code on a publicly accessible repository), only open publication of existing code and documentation.
+
+Each open repository must be created by an **Authorised Approver** on [Github](https://github.com/) (Microsoft), who takes responsibility for monitoring security messages and advisories for that repository and must inform the requestor if any alerts are produced for the repository.
+
+## Definitions
+
+**Open Publication Lead** is the lead on the open publication project.
+
+**Authorised Approver** is a senior member of technical staff who understands and is capable of following the SOP defined in the guidance.
+
+**Data Partnerships Committee (DPC)** is a committee consisting of data professionals, clinicians and IG experts with oversight of the use of data for non-research and non-clinical purposes.
+
+**Dependabot** is an automated service provided by Microsoft that scans code repositories for out-of-date packages -- for more information please see [Github's Description](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/) for more details on its purpose and how to use it.
+
+**Personally Identifiable Information** is personal data that can be used to uniquely identify an individual -- please refer to the [Information Commissioner's Office](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-information-a-guide/) for more information on the definition.
+
+**Secret scanning alerts** is a service provided by Microsoft that scans repositories for strings of characters that might constitute secret keys used in communicating securely between computers -- for more information please see [Github Documentation on Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning).
+
+## Expected behaviour for open publication approval
+
+### Roles and responsibilities
+
+Two roles are defined in this process, each with specific roles and responsibilities, summarized here. Further detail on processes to support the execution of these roles is presented below.
+
+1.  The **Open Publication Lead** is responsible for:
+    a.  Keeping records of all relevant details of publication approvals,
+    b.  Reporting these details as required to oversight bodies (e.g the Data Partnerships Committee),
+    c.  Maintaining this document and all related documents including their annual review, and
+    d.  Authorising and keeping records of all **Authorised Approvers**;
+2.  An **Authorised Approver** is responsible for:
+    a.  Ensuring that all relevant processes are followed for any project assigned to them through the open publication approval process before approving open publication,
+    b.  Ensuring that all project team members working on an assigned repo are sufficiently trained to follow the processes detailed below,
+    c.  Undertaking the publication itself for all assigned projects that they approve for publication, and
+    d.  Monitoring updates from Github on potential vulnerabilities in code (via Dependabot), reviewing weekly for such emails,
+    e.  working with the project team to remove non-compliant material if data breaches are identified involving publication of real data and/or content that does not comply to the requirements set out below.
+
+Further information on the process for non-compliance/breach identified in openly published repositories can be found below in the SOP section.
+
+### Approval process overview (for **Authorised Approvers**)
+
+It is expected that **Authorised Approvers** will follow this SOP whenever a request for open publication is made for any private repository in the Trust. Approval for open publication will be done only under the conditions detailed in this document, to ensure cybersecurity and information governance requirements are satisfied in the process of open publication.
+
+In the event that a repository is found not to conform to the standards set out in the SOP, the **Authorised Approver** must report back to the developers of that repository the specific issues that need to be addressed to make the repository conform to the requirements. This will enable quick and efficient iteration to enable open publication where it is appropriate.
+
+It is expected that the **Authorised Approver** will take responsibility for monitoring security/content alerts from Github's automated security scanning processes, will make the requestor aware of these issues and work with them to address the issues through a "fix" update to the repository.
+
+Authorisation for publication must not be granted on a conditional basis for repositories that require changes before they are ready for publication.
+
+## Supporting Processes
+
+### Authorization as approver
+
+If a member of staff wishes to become an **Authorised Approver** (the "candidate approver"), they must follow the process below:
+
+1.  candidate approver: email a request to the **Open Publication Lead** (OPL) in DRIVE for the latest version of this process document,
+2.  OPL: provide the document,
+3.  candidate approver: read and complete the document, then send it to the OPL,
+4.  OPL: review and decide on approval and notify requestor if approval is granted,
+5.  OPL: if approval is not granted, reason for decision to decline is given to the requestor.
+
+## Backup and Disaster Recovery
+
+All repositories that are openly published on Github must be initially created in GOSH's internal Gitlab instance, since this is where they will be developed before approval for publication providing additional redundancy. When publishing repositories on Github, these represent "major version" additional copies of work, which can serve as backups for internal repositories. If repositories published on Github are changed in any way or deleted, they can be re-uploaded from the internal GOSH Gitlab with approved versions as appropriate.
+
+Mitigations around risks of data loss from GOSH's internal Gitlab are within the scope of the Gitlab implementation/update project in the Trust. In order to minimize the risk of accidental deletion of code and/or documentation, data professionals using Gitlab in DRIVE are trained in the correct use of git version control and the use of Gitlab.
+
+## Standard Operating Procedure (SOP)
+
+When a request for open publication of a repository is made, an **Authorised Approver** must follow the SOP set out below:
+
+1.  Request registration
+    a.  Fill out an "Open Publication Review Pro Forma" (provided on request from an **Authorised Approver** or the OPL),
+    b.  Submit pro forma to DRE Senior Leadership Team for approval,
+    c.  Once approval has been granted, move to repository review;
+2.  Repository review (review cycle),
+    a.  Manually review all documents to check for sensitive or privileged information -- for instance:
+        i.  Any data (even if anonymized) that has not been approved for release through standard Trust IG processes,
+        ii. Personal sensitive information, including clinical information that could potentially identify an individual, patient or their family, unless consent is obtained to share this information,
+        iii. Personal information that could potentially identify an individual or employee, unless consent is obtained to share this information (Personally Identifiable Information),
+        iv. Any legal advice provided to GOSH by either the GOSH Legal team or any external barrister/solicitor,
+        v.  any confidential business, contractual or financial information;
+    b.  Manually check for the existence of relevant library requirements files (where appropriate) --
+        i.  `requirements.txt` file for Python code,
+        ii. `renv.lock` file for R code;
+    c.  Manually check that there is a substantive README covering (where appropriate) --
+        i.  A description of the purpose of the repository,
+        ii. Installation and usage instructions,
+        iii. The GOSH DRE shared email (*DRE SUPPORT EMAIL*),
+        iv. Reference to the relevant license (see next section);
+    d.  Manually check that there is a relevant license file in the repository --
+        i.  An [MIT license](https://opensource.org/license/mit/) (for code),
+        ii. An [Open Government 3.0 license](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) and [Crown copyright](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/) statement (for documentation);
+    e.  Manually check that pre-commit hooks are in place to ensure that "secrets" and real data have not been included in the repository;
+    f.  If any of the above checks result in identification of a non-compliant part of the repository, report this to the requestor for update;
+    g.  Repeat this step until no further non-compliant parts are identified;
+3.  Register approval
+    a.  Complete the Open Publication Checklist (Appendix 2) and submit to be stored alongside the project registration;
+    b.  Add approval and date to the open publication register maintained by the OPL;
+4.  Upload and open publication
+    a.  If it is a new repository -
+        i.  create an appropriately named private repository on Github with the appropriate organization as owner --
+            1.  `gosh-dre` for DRE projects,
+            2.  `goshdrive` for other projects,
+        ii. Add the requestor as a developer (if they are not in the relevant organization),
+        iii. merge the internal repository into the private repository on Github,
+        iv. Enable "**Dependabot**" alerts in the repository "Security" tab,
+        v.  Check that the "Default notifications email" address is the **Authorised Approver**'s registered GOSH email address (this is an account-specific setting, not a repository-specific setting),
+        vi. switch the repository to public in the "Settings" tab (you will be prompted to confirm your credentials and your switch),
+        vii. Enable "**Secret scanning alerts**" from the "Security" tab;
+5.  Ongoing review
+    a.  Monitor incoming security alert emails from Github (scans are run weekly by Microsoft) to ensure that the repository remains compliant with this SOP --
+        i.  notify the requestor when the repository becomes non-compliant,
+        ii. create a "fix" branch to update the repository,
+        iii. work with the requestor to ensure that the fix addresses all non-compliance,
+        iv. merge the "fix" branch into the open repository.
+
+### Data Breach and non-compliance
+
+The process set out above includes multiple steps to reduce the risk of accidental data breach and publication of non-compliant material. However, there remains a very small risk that these may not be picked up by the project team or the **Authorised Approver**. If suspected data/non-compliant material is identified on an openly published repository (a "breach"), the following steps must be taken:
+
+1.  Immediate steps (**Authorised Approver**) -
+    a.  Switch the repository to "private",
+    b.  Notify the project team,
+    c.  Follow the standard Trust procedure for data breach (Information Governance and Data Protection Policy - including reporting on Datix within 24 hours),
+    d.  Notify the Cybersecurity Team via email (*CYBERSECURITY EMAIL*) and
+    e.  Notify the **Open Publication Lead**;
+2.  Follow up (**Authorised Approver**) --
+    a.  Follow the data breach process including any actions coming out of the Datix report, and
+    b.  Report to the **Open Publication Lead** on the source of the breach and the mechanism by which it was included;
+3.  Subject to approval to republish (following any advice coming out of the data breach process -- **Authorised Approver**) -
+    a.  Update the internal Gitlab version of the repo to remove non-compliant material/data, until it is compliant with the process defined above, and
+    b.  Replace the private Github version with the updated approved repo version from the internal Gitlab and republish;
+4.  Reporting (**Open Publication Lead**) --
+    a.  Update the responsibility process to reduce the risk of repeated breach, and
+    b.  Report the incident and follow up actions to the Data Partnerships Committee for consideration.
+
+## Appendix A: Request for Open Publication Authoriser ("Authorised Approver") Rights Form[^responsibility-process-1] {#sec-oprp-app-a .appendix}
+
+[^responsibility-process-1]: In internal documentation this Appendix is presented as a PDF form to be filled out and submitted to the **Open Publication Lead**.
+
+### Requestor Details
+
+-   Name
+-   Date
+-   Contact No.
+-   Email address
+-   Role
+-   Department
+-   Reason for request
+
+### Information Security Statement
+
+In order to perform my job duties and fulfill my responsibilities to GOSH, I am requesting open publication authorizer rights.
+
+By signing this application, I acknowledge that I:
+
+-   have read and agree to comply with the governance and security guidance set out in the 'Open Publication Responsibility Process' document, regarding the review and approval of open publication in the Trust,
+-   have read the Trust's Acceptable Use of ICT Policy and Information Security Policy and agree to abide by the rules and regulations that apply,
+-   will ensure that all participants in the open publication process have received sufficient training in good software engineering practice and responsible publication.
+
+To be signed by the requestor.
+
+### Sign-off
+
+To be signed off by the **Open Publication Lead**
+
+## Appendix B: Checklist for Open Publication {#sec-oprp-app-b .appendix}

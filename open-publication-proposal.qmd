@@ -1,0 +1,66 @@
+# DRIVE open publication proposal {#sec-dpc-proposal}
+
+## Summary
+
+This document covers the details of implementation of various types of open publication as agreed with the Data Partnerships Committee at GOSH. It includes a number of scenarios and requirements regarding review of materials and ongoing audit of regularly updated repos. This document does not contain a full breakdown of the principle of open publication, but rather focuses on delivery of that principle for code and documentation produced by members of the DRIVE team and beyond at GOSH.
+
+## Introduction
+
+The principle of open sharing of information within the NHS and beyond has been established at various levels, from government reviews down to specific agreement with the Data Partnerships Committee here at GOSH. The benefits of sharing intelligence, insights and best practice have been recognized therefore it is required that a workable process for implementing and overseeing open sharing is created. This process should balance the risks of dissemination of privileged and personally identifiable information (PPII), and risks around information security, against the benefits of providing and using openly shared resources with the rest of the NHS and the rest of the world.
+
+The recommended route for open publication is via Github, a cloud-based Git repository hosting solution owned by Microsoft and available to be used for free, and this would be the intended target of every project openly published by the DRIVE team. The process for sharing works on the principle of "repositories" (or "repos") which are project-specific sets of files (usually in a file structure identical to subfolders on a network drive) alongside a complete history of all those files, which can be selectively modified as required. This can be accessed by anyone on the Internet and the files are published with a permissive license allowing the use of the files for more-or-less any purpose and without any warranty.
+
+This document will walk through the various protocols for open publication to be used in the Trust, and detail the steps and documentation required prior to open publication of any project within the team. This will ensure that repositories of documentation and code are published expediently while retaining suitable safeguards to mitigate any risks of inadvertent data sharing and/or of security-compromised code being deployed into the Trust. The following routes for publication:
+
+1. Publication at major versions,
+    a. Document publication,
+    b. Code publication,
+2. Open Coding (to be defined).
+
+## Open Publication (Major Versions)
+
+### Description
+
+Often, development of a body of work on a particular project (either documentation or code) occurs in phases of "drafting", then review before finalization of a version, repeated multiple times -- particularly when that work covers a number of topics/areas/requirements. This drafting process can contain content that requires review prior to publication. At each review, prior to finalization of a version, the content is checked for any privileged information or patient data, which is removed prior to version finalization. Open publication of this work in a repo therefore requires a robust review process, taking into account infosec requirements, and legal requirements regarding publishable content.
+
+In this model of development and publication, the repo is only EVER pushed to the public repo. New versions are then merged into that pushed version. The repo is never pulled from that public repo and all development work occurs privately inside the GOSH network boundary according to our previously established development processes.
+
+### Governance
+
+All projects working towards repositories for open publication will be registered with the DRE Senior Leadership Team and a record will be kept as to decisions on publication. Please see Appendix 1 for the agreed registration form. For projects that are approved, repositories will be developed internally and published according to the below protocol. [^1]
+
+[^1]: **PLEASE NOTE**: the protocol in this document has be superseded by the Standard Operating Procedure detailed in the Responsibility Process Document (@sec-responsibility-process).
+
+Audits of all code-based repositories will be undertaken on a quarterly basis, to ensure that malicious dependencies / vulnerabilities have not been identified in the repository. This audit will be presented to the Data Partnerships Committee (DPC) for review. This protocol will be reviewed annually to ensure that it remains fit-for-purpose and a report on its suitability and any proposed updates will be brought to the DPC for review and approval.
+
+### Protocol
+
+1.  **Registration:** Projects with a component to be openly published will be registered and authorized as described above,
+
+2.  **Development:** All repository contents are developed in an internal repo (GOSH Gitlab) according to current internal code development processes and/or standard document drafting procedures within the Trust,[^2]
+
+[^2]: Usually documents are developed on internal systems in the Word format on Sharepoint.  While this is effective for collaborative development within the Trust, open publication is much more effective when done in markdown format – a text format containing all markup specifications explicitly in the text (e.g. “#” is used to denote a title).  Therefore, development of material for open publication will require a transcription into markdown format.  Manual review will be repeated on the transcribed version of documents, prior to open publication.
+
+3.  **Major version finalization:** Prior to version finalization, all repo contents will be manually reviewed by a team member who did not develop the repo and any issues raised will be corrected and double-checked, [^1]
+
+4.  **Open publication:** The internal repo will "merged" into the corresponding open repo on Github (or a new repo as required) using the standard update process, [^1]
+
+5.  **Review:** Openly available repos will be periodically audited as detailed above. [^1]
+
+### Review Requirements[^1]
+
+Repos containing either code or documents for publication require specific types of review, as detailed below.
+
+1. **General requirements:**
+    a. Repos must not contain any Personally Identifiable Information relating either to patients or to staff,
+    a. Repos must not contain any "secrets" -- passwords or API keys or other information that might expose the internal structure of ICT infrastructure in GOSH,
+2. **Code Review Requirements:**
+    a. Parts of code containing business/analytical logic must be covered by unit tests to provide assurance that the code works in the way that it says it works,
+    a. Code must be free of known malicious dependencies, and
+    a. Code must be suitably explained in a README file in the repo -- detailing installation and use of the contents of the repo,
+3. **Document Review Requirements:**
+    a. Documents must not contain privileged information -- for instance business or clinically sensitive information or financial details relating to the Trust.
+
+## Open Coding
+
+The government and NHS central bodies recommend open coding – development of code directly on an openly available repository (e.g. Github, owned by Microsoft), however this requires more rigorous ongoing processes for monitoring code, so will be developed once the open publication protocol above has been agreed and implemented.

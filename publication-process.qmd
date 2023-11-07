@@ -1,0 +1,31 @@
+# Open publication full process {#sec-full-process}
+
+## Description
+
+This page sets out the overall process for open publication, with reference to the included documents (@sec-registration-pro-forma and @sec-responsibility-process).  For the sake of completeness it includes the process for registering an "authorised approver" who takes responsibility for the adherence of the candidate repository to the open publication specification.
+
+## Steps
+
+### Approved authoriser registration
+
+Please note, a prerequisite of this process is that a senior staff member ("**Open Publication Lead**" - OPL) takes overall responsibility for administering the open oublication process including the authorisation of approvers and undertaking registration of open publication candidates.
+
+1. Prospective "authorised approver" reads, agrees to and signs the Open Publication Responsibility Process (@sec-responsibility-process);
+1. The open publication lead reviews the request and authorises appropriately.
+
+### Repository registration
+
+1. An open publication registration pro forma (@sec-registration-pro-forma) is filled out and submitted to an appropriate oversight committee in the Trust;
+1. The pro forma is reviewed and if no objections the repository is registered (with suitable records kept by the open publication lead).
+
+### Open publication approval
+
+1. The repository is reviewed by an assigned authorised approver against the criteria set out in the open publication responsibility process;
+1. If any criteria are not satisfied then issues are addressed between the authorised approver and the development team;
+1. Once all criteria are passed, the repository is considered approved for open publication.
+
+### Open publication
+
+1. A private repository is created in Github and the approved version of the repository is uploaded as a snapshot;
+1. The relevant process for setting up regular repository checks is set up in Github;
+1. The repository is published as a public repository.

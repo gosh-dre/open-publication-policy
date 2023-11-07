@@ -1,0 +1,35 @@
+# Open Publication Review Pro Forma {#sec-registration-pro-forma}
+
+## Introduction
+
+This form should be filled out for a project being considered for open publication, open documentation or open sourcing within DRIVE. It sets outs a number of questions to consider, which will determine the suitability of that project for open publication. This form should be presented to the DRE Senior Leadership Team for review and acceptance before any project is published openly. All projects that are openly published in any way must adhere to software engineering best practices and the principles of Reproducible Analytics Pipelines where relevant -- and be submitted to an authorized approver for final sign off.
+
+The "Lead Contributor" should be the senior individual contributor on the project, who will take responsibility for adherence to best practice development and controls as set out in @sec-responsibility-process (latest version available on request from DRE Support).
+
+IMPORTANT NOTE: review for open publication does not address ANY considerations around data management/IG; projects are still required to go through all relevant registration and approval processes (including DPIAs where appropriate). It remains the responsibility of the project Chief Investigator/Principal Investigator to ensure that all such documentation is in place and approved before open publication begins on a project involving real data processing.
+
+## Project Details
+
+| Item                                 | Value |
+|--------------------------------------|-------|
+| Project Name                         |       |
+| Lead Contributor                     |       |
+| DRE Project Number (if applicable)   |       |
+| Short Description                    |       |
+| Link to current repo (if applicable) |       |
+| Date of submission                   |       |
+| Date of DRE SLT review               |       |
+
+## Review Questions
+
+|     | Question                                                                                                                                                        | Options | Answer |
+|--------|--------------------------------------------------|--------|--------|
+| 1\. | Will the project include the processing of patient data? If yes, please specify project approval below (e.g. R&D number)                                        | Yes/No  |        |
+| 2\. | Will the project include commercially or organizationally sensitive information or data processing?                                                             | Yes/No  |        |
+|     | *If yes, development must be internal and code/documentation should be reviewed for open sourcing at the point of publication of project results/outcomes.*     |         |        |
+| 3\. | Will the project code intellectual property (IP) be of commercial value?                                                                                        | Yes/No  |        |
+|     | *If yes, code/documentation must not be published openly until this has been reviewed.*                                                                         |         |        |
+| 4\. | Does this project have publication value that might be compromised by open coding?                                                                              | Yes/No  |        |
+|     | *If yes, the project must be reviewed against project funding requirements to assess suitability for open coding or open sourcing at the point of publication.* |         |        |
+| 5\. | Will the project code be developed in collaboration with any external partner?                                                                                  | Yes/No  |        |
+|     | *If yes, the project must be reviewed with the external partner to assess suitability for open coding or open sourcing at the point of publication.*            |         |        |

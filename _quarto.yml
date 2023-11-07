@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "The GOSH 'Major Version' open publication process"
+  author: "Dr William A Bryant"
+  date: "2023-11-01"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - publication-process.qmd
+    - open-publication-proposal.qmd
+    - responsibility-process.qmd
+    - registration-pro-forma.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual

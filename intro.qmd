@@ -1,0 +1,64 @@
+# Introduction
+
+## Abstract
+
+This repository contains all finalised and approved processes and documentation supporting the rollout of open publication of major versions of documents and code at Great Ormond Street Hospital for Children (GOSH).  These documents have been developed by the Digital Research Environment Team at GOSH, working with a number of stakeholder groups from across the Trust to ensure that the process is useful while maintaining effective safeguards to mitigate risks of data breach and other risks associated with open publication.
+
+While a number of process / governance elements of this may not have direct equivalents in other NHS Trusts, it is hoped that this can provide a basis/inspiration from which to develop similar processes to support a culture of open publication in the NHS.
+
+**PLEASE NOTE:** although the ultimate aspiration for code development across the NHS would be that it be in an open coding framework, this process does not provide a basis on which to do this for work undertaken inside GOSH and based on patient data overseen by the Trust.  We believe however that this is a significant first step for GOSH towards that goal, and that it will support further developments in that direction in the future.
+
+## Glossary
+
+**DPC - Data Partnership Committee**: the governance body overseeing information and data governance within the DRIVE team with membership including the Caldicott Guardian.
+
+**DRE - Digital Research Environment (Team)**: a data analysis, data science and data engineering team set up in the Research and Innovation (R&I) Directorate in GOSH to extract data for research and other secondary purposes and to facilitate its use in novel ways to benefit patients, staff and the wider NHS.
+
+**DRIVE - Data Research, Innovation and Virtual Environments**: The part of R&I dedicated to advanced analytics and data science, operational analytics, use of tech and virtual environments (including virtual wards), housed in the GOSH DRIVE Office (the "DRIVE Innovation Hub").
+
+**GOSH - Great Ormond Street Hospital for Children NHS Foundation Trust**.
+
+**ICT - Information and Communication Technologies Department** at GOSH.
+
+**R&I - Research and Innovation**: the directorate at GOSH covering innovation including DRIVE and the DRE.
+
+## Overview of contents
+
+This repo contains a number of related documents (currently "Chapters" for the purposes of ease in Quarto) providing a complete, approved process for open publication of code repos developed in the Trust and documentation (such as this) supporting better use of technology and data within the NHS.
+
+@sec-full-process contains a description of the overall process by which open publication is authorised and enacted in the Trust, including how to use the included documents.
+
+@sec-dpc-proposal is the initial paper presented to our overarching governance group, the Data Partnership Committee.  The following papers fully document that process and the way we govern the use of open publication.
+
+@sec-responsibility-process describes the process by which candidate repositories can be reviewed, made ready for publication and published.  This includes review by an "authorised approver" who works with the development team to ensure that the repository is ready for open publication.  Our development process within GOSH uses an internal Gitlab instance, from which a snapshot - a "major version" - is taken for publication.  Review is therefore undertaken internally before repositories are published to Github.
+
+@sec-registration-pro-forma is filled out for any project that will be openly published to ensure that considerations such as commercial relationships and IP are accounted for, and for reporting purposes.
+
+## Approval of the open publication model
+
+This process was developed to support our strategy within the DRIVE Innovation Hub at GOSH to adopt and champion modern open ways of working within the NHS. It represents one of the cornerstones on which this strategy rests. We have developed a workable process that is acceptable to us as data professionals, our Information Governance Team and our ICT cybersecurity team, in order to safely and effectively openly publish our work - both documentary and code.
+
+@sec-dpc-proposal is a transcription of the proposal that we took to our operational governance group, the Data Partnership Committee, for review and approval. This proposal was agreed subject to the creation of a duly authorised process for minimising the risk that published content might contravene our cybersecurity and governance responsibility within the Trust, and that a process was in place to mitigate risks to hospital systems, processes and data should such a data breach occur.
+
+While the proposal itself as agreed has some details on the process for open publication, these were superseded by a more formal and systematic standard operating procedure for open publication.  This new more comprehensive process (@sec-responsibility-process) was authored in conjunction with our internal ICT and Information Governance teams.
+
+## The GOSH Data Partnership Committee and Data Privacy
+
+The Data Partnership Committee is a formal governance committee at GOSH overseeing the use of data and advanced analytics in circumstances not covered through previously existing governance processes (e.g. research approval, clinical audit registration).  The committee chair is the GOSH Director of Innovation and membership includes the Caldicott Guardian, Trust Data Protection Officer, Head of Information Governance and Head of Governance, Clinical Trials and Contracts.
+
+Although primarily set up to oversee legal and responsible use of data for secondary purposes, the remit includes novel processes with potential risks associated with data (for instance potential data breach for new processes).  A Data Protection Impact Assessment (DPIA) review was made for open publication, but since the process itself intentionally excludes data processing (mechanisms are set up to prevent the incorporation of data into repositories) it was concluded that a full DPIA was not necessary.
+
+All data/analytics projects undertaken at GOSH are authorised individually according to their nature, and in some circumstances this might require an approval or a DPIA, but open publication does not impact on the project authorisation process in any way.
+
+## National context
+
+Open publication (and indeed open coding) are advocated for and supported by various national bodies.  Whilst a vast literature exists discussing the use of data in various contexts in the NHS, the key documents touching on this process are as follows:
+
+-   [Topol Review](https://topol.hee.nhs.uk/),
+-   [DHSC "Data Saves Lives" Data Strategy -- June 2022](https://www.gov.uk/government/publications/data-saves-lives-reshaping-health-and-social-care-with-data/data-saves-lives-reshaping-health-and-social-care-with-data),
+-   [Goldacre Report](https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis),
+-   [NHSX Open Source Policy](https://github.com/nhsx/open-source-policy),
+-   [NHSD RAP Community of Practice](https://github.com/NHSDigital/rap-community-of-practice), and
+-   [NHS-R Statements on Tools](https://github.com/nhs-r-community/statements-on-tools).
+
+In addition, NHSE is developing [Reproducible Analytical Pipelines documentation (Alpha)](https://nhsengland.github.io/Health-RAP-Playbook-Alpha/) (including considerations around open publication) in order to support wider adoption in the NHS.

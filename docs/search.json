@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "intro.html#abstract",
+    "href": "intro.html#abstract",
+    "title": "1  Introduction",
+    "section": "1.1 Abstract",
+    "text": "1.1 Abstract\nThis repository contains all finalised and approved processes and documentation supporting the rollout of open publication of major versions of documents and code at Great Ormond Street Hospital for Children (GOSH). These documents have been developed by the Digital Research Environment Team at GOSH, working with a number of stakeholder groups from across the Trust to ensure that the process is useful while maintaining effective safeguards to mitigate risks of data breach and other risks associated with open publication.\nWhile a number of process / governance elements of this may not have direct equivalents in other NHS Trusts, it is hoped that this can provide a basis/inspiration from which to develop similar processes to support a culture of open publication in the NHS.\nPLEASE NOTE: although the ultimate aspiration for code development across the NHS would be that it be in an open coding framework, this process does not provide a basis on which to do this for work undertaken inside GOSH and based on patient data overseen by the Trust. We believe however that this is a significant first step for GOSH towards that goal, and that it will support further developments in that direction in the future."
+  },
+  {
+    "objectID": "intro.html#glossary",
+    "href": "intro.html#glossary",
+    "title": "1  Introduction",
+    "section": "1.2 Glossary",
+    "text": "1.2 Glossary\nDPC - Data Partnership Committee: the governance body overseeing information and data governance within the DRIVE team with membership including the Caldicott Guardian.\nDRE - Digital Research Environment (Team): a data analysis, data science and data engineering team set up in the Research and Innovation (R&I) Directorate in GOSH to extract data for research and other secondary purposes and to facilitate its use in novel ways to benefit patients, staff and the wider NHS.\nDRIVE - Data Research, Innovation and Virtual Environments: The part of R&I dedicated to advanced analytics and data science, operational analytics, use of tech and virtual environments (including virtual wards), housed in the GOSH DRIVE Office (the “DRIVE Innovation Hub”).\nGOSH - Great Ormond Street Hospital for Children NHS Foundation Trust.\nICT - Information and Communication Technologies Department at GOSH.\nR&I - Research and Innovation: the directorate at GOSH covering innovation including DRIVE and the DRE."
+  },
+  {
+    "objectID": "intro.html#overview-of-contents",
+    "href": "intro.html#overview-of-contents",
+    "title": "1  Introduction",
+    "section": "1.3 Overview of contents",
+    "text": "1.3 Overview of contents\nThis repo contains a number of related documents (currently “Chapters” for the purposes of ease in Quarto) providing a complete, approved process for open publication of code repos developed in the Trust and documentation (such as this) supporting better use of technology and data within the NHS.\nChapter 2 contains a description of the overall process by which open publication is authorised and enacted in the Trust, including how to use the included documents.\nChapter 3 is the initial paper presented to our overarching governance group, the Data Partnership Committee. The following papers fully document that process and the way we govern the use of open publication.\nChapter 4 describes the process by which candidate repositories can be reviewed, made ready for publication and published. This includes review by an “authorised approver” who works with the development team to ensure that the repository is ready for open publication. Our development process within GOSH uses an internal Gitlab instance, from which a snapshot - a “major version” - is taken for publication. Review is therefore undertaken internally before repositories are published to Github.\nChapter 5 is filled out for any project that will be openly published to ensure that considerations such as commercial relationships and IP are accounted for, and for reporting purposes."
+  },
+  {
+    "objectID": "intro.html#approval-of-the-open-publication-model",
+    "href": "intro.html#approval-of-the-open-publication-model",
+    "title": "1  Introduction",
+    "section": "1.4 Approval of the open publication model",
+    "text": "1.4 Approval of the open publication model\nThis process was developed to support our strategy within the DRIVE Innovation Hub at GOSH to adopt and champion modern open ways of working within the NHS. It represents one of the cornerstones on which this strategy rests. We have developed a workable process that is acceptable to us as data professionals, our Information Governance Team and our ICT cybersecurity team, in order to safely and effectively openly publish our work - both documentary and code.\nChapter 3 is a transcription of the proposal that we took to our operational governance group, the Data Partnership Committee, for review and approval. This proposal was agreed subject to the creation of a duly authorised process for minimising the risk that published content might contravene our cybersecurity and governance responsibility within the Trust, and that a process was in place to mitigate risks to hospital systems, processes and data should such a data breach occur.\nWhile the proposal itself as agreed has some details on the process for open publication, these were superseded by a more formal and systematic standard operating procedure for open publication. This new more comprehensive process (Chapter 4) was authored in conjunction with our internal ICT and Information Governance teams."
+  },
+  {
+    "objectID": "intro.html#the-gosh-data-partnership-committee-and-data-privacy",
+    "href": "intro.html#the-gosh-data-partnership-committee-and-data-privacy",
+    "title": "1  Introduction",
+    "section": "1.5 The GOSH Data Partnership Committee and Data Privacy",
+    "text": "1.5 The GOSH Data Partnership Committee and Data Privacy\nThe Data Partnership Committee is a formal governance committee at GOSH overseeing the use of data and advanced analytics in circumstances not covered through previously existing governance processes (e.g. research approval, clinical audit registration). The committee chair is the GOSH Director of Innovation and membership includes the Caldicott Guardian, Trust Data Protection Officer, Head of Information Governance and Head of Governance, Clinical Trials and Contracts.\nAlthough primarily set up to oversee legal and responsible use of data for secondary purposes, the remit includes novel processes with potential risks associated with data (for instance potential data breach for new processes). A Data Protection Impact Assessment (DPIA) review was made for open publication, but since the process itself intentionally excludes data processing (mechanisms are set up to prevent the incorporation of data into repositories) it was concluded that a full DPIA was not necessary.\nAll data/analytics projects undertaken at GOSH are authorised individually according to their nature, and in some circumstances this might require an approval or a DPIA, but open publication does not impact on the project authorisation process in any way."
+  },
+  {
+    "objectID": "intro.html#national-context",
+    "href": "intro.html#national-context",
+    "title": "1  Introduction",
+    "section": "1.6 National context",
+    "text": "1.6 National context\nOpen publication (and indeed open coding) are advocated for and supported by various national bodies. Whilst a vast literature exists discussing the use of data in various contexts in the NHS, the key documents touching on this process are as follows:\n\nTopol Review,\nDHSC “Data Saves Lives” Data Strategy – June 2022,\nGoldacre Report,\nNHSX Open Source Policy,\nNHSD RAP Community of Practice, and\nNHS-R Statements on Tools.\n\nIn addition, NHSE is developing Reproducible Analytical Pipelines documentation (Alpha) (including considerations around open publication) in order to support wider adoption in the NHS."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The GOSH ‘Major Version’ open publication process",
+    "section": "",
+    "text": "Preface\nThis report contains the processes agreed between the GOSH DRIVE data teams, GOSH Information Governance and GOSH ICT to enable the open publication of “major” versions of documentation and code developed within GOSH for public view. This report includes, in some instances, references to other processes and/or structures that are specific to GOSH, and thus are described in some detail.\nPlease direct queries to DRESupport@gosh.nhs.uk."
+  },
+  {
+    "objectID": "registration-pro-forma.html#introduction",
+    "href": "registration-pro-forma.html#introduction",
+    "title": "5  Open Publication Review Pro Forma",
+    "section": "5.1 Introduction",
+    "text": "5.1 Introduction\nThis form should be filled out for a project being considered for open publication, open documentation or open sourcing within DRIVE. It sets outs a number of questions to consider, which will determine the suitability of that project for open publication. This form should be presented to the DRE Senior Leadership Team for review and acceptance before any project is published openly. All projects that are openly published in any way must adhere to software engineering best practices and the principles of Reproducible Analytics Pipelines where relevant – and be submitted to an authorized approver for final sign off.\nThe “Lead Contributor” should be the senior individual contributor on the project, who will take responsibility for adherence to best practice development and controls as set out in Chapter 4 (latest version available on request from DRE Support).\nIMPORTANT NOTE: review for open publication does not address ANY considerations around data management/IG; projects are still required to go through all relevant registration and approval processes (including DPIAs where appropriate). It remains the responsibility of the project Chief Investigator/Principal Investigator to ensure that all such documentation is in place and approved before open publication begins on a project involving real data processing."
+  },
+  {
+    "objectID": "registration-pro-forma.html#project-details",
+    "href": "registration-pro-forma.html#project-details",
+    "title": "5  Open Publication Review Pro Forma",
+    "section": "5.2 Project Details",
+    "text": "5.2 Project Details\n\n\n\nItem\nValue\n\n\n\n\nProject Name\n\n\n\nLead Contributor\n\n\n\nDRE Project Number (if applicable)\n\n\n\nShort Description\n\n\n\nLink to current repo (if applicable)\n\n\n\nDate of submission\n\n\n\nDate of DRE SLT review"
+  },
+  {
+    "objectID": "registration-pro-forma.html#review-questions",
+    "href": "registration-pro-forma.html#review-questions",
+    "title": "5  Open Publication Review Pro Forma",
+    "section": "5.3 Review Questions",
+    "text": "5.3 Review Questions\n\n\n\n\n\n\n\n\n\n\nQuestion\nOptions\nAnswer\n\n\n\n\n1.\nWill the project include the processing of patient data? If yes, please specify project approval below (e.g. R&D number)\nYes/No\n\n\n\n2.\nWill the project include commercially or organizationally sensitive information or data processing?\nYes/No\n\n\n\n\nIf yes, development must be internal and code/documentation should be reviewed for open sourcing at the point of publication of project results/outcomes.\n\n\n\n\n3.\nWill the project code intellectual property (IP) be of commercial value?\nYes/No\n\n\n\n\nIf yes, code/documentation must not be published openly until this has been reviewed.\n\n\n\n\n4.\nDoes this project have publication value that might be compromised by open coding?\nYes/No\n\n\n\n\nIf yes, the project must be reviewed against project funding requirements to assess suitability for open coding or open sourcing at the point of publication.\n\n\n\n\n5.\nWill the project code be developed in collaboration with any external partner?\nYes/No\n\n\n\n\nIf yes, the project must be reviewed with the external partner to assess suitability for open coding or open sourcing at the point of publication."
+  },
+  {
+    "objectID": "responsibility-process.html#version-control",
+    "href": "responsibility-process.html#version-control",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.1 Version Control",
+    "text": "4.1 Version Control\nThis document was approved as version 1.0 of the GOSH “Major Version” Open Publication Responsibility Process."
+  },
+  {
+    "objectID": "responsibility-process.html#introduction",
+    "href": "responsibility-process.html#introduction",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.2 Introduction",
+    "text": "4.2 Introduction\nThe purpose of this document is to instruct staff on the appropriate process for reviewing and authorising the open publication of code and documents by staff at Great Ormond Street Hospital for Children NHS Foundation Trust, and to aid the interpretation of requirements set forth in the Trust’s policies.\nSupporting Trust policies:\n\nConfidentiality Policy\nInformation Governance and Data Protection Policy\nInformation Security Policy\nAcceptable Use of ICT\nDisciplinary Policy\n\nGOSH and NHSE do not currently have a published policy concerning Open Publication. Therefore, other relevant supporting material is referenced here:\n\nDHSC “Data Saves Lives” Data Strategy – June 2022\nISMS P001/010 Software Development Standard\nNHSX Open Source Policy Draft\nNHSD RAP community of practice\n\nThe data teams in DRIVE and ICT will continue to work together to oversee and review this process, and adapt it to adhere to any future policies and/or regulations regarding open publication in the NHS.\nWhere terms are highlighted they have a definition in the “Definitions” section of the document."
+  },
+  {
+    "objectID": "responsibility-process.html#scope",
+    "href": "responsibility-process.html#scope",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.3 Scope",
+    "text": "4.3 Scope\nThe guidance herein applies to all repositories (code or documentary) maintained privately in the Trust, where no reason for maintaining privacy has been established (there is a presumption that all NHS documentation and code should be public, except where specific exclusions preclude the open publication of such documentation or code – see DHSC “Data Saves Lives” Data Strategy).\nAll open publication requests must be approved by an “Authorised Approver”, a senior member of technical staff who has read and signed this declaration of responsibility for authorising open publication. This guidance therefore covers the standard operating procedure for authorising open publication and should be followed in response to any request for open publication of a private Trust repository.\nThis guidance does not cover authorisation for “open coding” (development of code on a publicly accessible repository), only open publication of existing code and documentation.\nEach open repository must be created by an Authorised Approver on Github (Microsoft), who takes responsibility for monitoring security messages and advisories for that repository and must inform the requestor if any alerts are produced for the repository."
+  },
+  {
+    "objectID": "responsibility-process.html#definitions",
+    "href": "responsibility-process.html#definitions",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.4 Definitions",
+    "text": "4.4 Definitions\nOpen Publication Lead is the lead on the open publication project.\nAuthorised Approver is a senior member of technical staff who understands and is capable of following the SOP defined in the guidance.\nData Partnerships Committee (DPC) is a committee consisting of data professionals, clinicians and IG experts with oversight of the use of data for non-research and non-clinical purposes.\nDependabot is an automated service provided by Microsoft that scans code repositories for out-of-date packages – for more information please see Github’s Description for more details on its purpose and how to use it.\nPersonally Identifiable Information is personal data that can be used to uniquely identify an individual – please refer to the Information Commissioner’s Office for more information on the definition.\nSecret scanning alerts is a service provided by Microsoft that scans repositories for strings of characters that might constitute secret keys used in communicating securely between computers – for more information please see Github Documentation on Secret Scanning."
+  },
+  {
+    "objectID": "responsibility-process.html#expected-behaviour-for-open-publication-approval",
+    "href": "responsibility-process.html#expected-behaviour-for-open-publication-approval",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.5 Expected behaviour for open publication approval",
+    "text": "4.5 Expected behaviour for open publication approval\n\n4.5.1 Roles and responsibilities\nTwo roles are defined in this process, each with specific roles and responsibilities, summarized here. Further detail on processes to support the execution of these roles is presented below.\n\nThe Open Publication Lead is responsible for:\n\nKeeping records of all relevant details of publication approvals,\nReporting these details as required to oversight bodies (e.g the Data Partnerships Committee),\nMaintaining this document and all related documents including their annual review, and\nAuthorising and keeping records of all Authorised Approvers;\n\nAn Authorised Approver is responsible for:\n\nEnsuring that all relevant processes are followed for any project assigned to them through the open publication approval process before approving open publication,\nEnsuring that all project team members working on an assigned repo are sufficiently trained to follow the processes detailed below,\nUndertaking the publication itself for all assigned projects that they approve for publication, and\nMonitoring updates from Github on potential vulnerabilities in code (via Dependabot), reviewing weekly for such emails,\nworking with the project team to remove non-compliant material if data breaches are identified involving publication of real data and/or content that does not comply to the requirements set out below.\n\n\nFurther information on the process for non-compliance/breach identified in openly published repositories can be found below in the SOP section.\n\n\n4.5.2 Approval process overview (for Authorised Approvers)\nIt is expected that Authorised Approvers will follow this SOP whenever a request for open publication is made for any private repository in the Trust. Approval for open publication will be done only under the conditions detailed in this document, to ensure cybersecurity and information governance requirements are satisfied in the process of open publication.\nIn the event that a repository is found not to conform to the standards set out in the SOP, the Authorised Approver must report back to the developers of that repository the specific issues that need to be addressed to make the repository conform to the requirements. This will enable quick and efficient iteration to enable open publication where it is appropriate.\nIt is expected that the Authorised Approver will take responsibility for monitoring security/content alerts from Github’s automated security scanning processes, will make the requestor aware of these issues and work with them to address the issues through a “fix” update to the repository.\nAuthorisation for publication must not be granted on a conditional basis for repositories that require changes before they are ready for publication."
+  },
+  {
+    "objectID": "responsibility-process.html#supporting-processes",
+    "href": "responsibility-process.html#supporting-processes",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.6 Supporting Processes",
+    "text": "4.6 Supporting Processes\n\n4.6.1 Authorization as approver\nIf a member of staff wishes to become an Authorised Approver (the “candidate approver”), they must follow the process below:\n\ncandidate approver: email a request to the Open Publication Lead (OPL) in DRIVE for the latest version of this process document,\nOPL: provide the document,\ncandidate approver: read and complete the document, then send it to the OPL,\nOPL: review and decide on approval and notify requestor if approval is granted,\nOPL: if approval is not granted, reason for decision to decline is given to the requestor."
+  },
+  {
+    "objectID": "responsibility-process.html#backup-and-disaster-recovery",
+    "href": "responsibility-process.html#backup-and-disaster-recovery",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.7 Backup and Disaster Recovery",
+    "text": "4.7 Backup and Disaster Recovery\nAll repositories that are openly published on Github must be initially created in GOSH’s internal Gitlab instance, since this is where they will be developed before approval for publication providing additional redundancy. When publishing repositories on Github, these represent “major version” additional copies of work, which can serve as backups for internal repositories. If repositories published on Github are changed in any way or deleted, they can be re-uploaded from the internal GOSH Gitlab with approved versions as appropriate.\nMitigations around risks of data loss from GOSH’s internal Gitlab are within the scope of the Gitlab implementation/update project in the Trust. In order to minimize the risk of accidental deletion of code and/or documentation, data professionals using Gitlab in DRIVE are trained in the correct use of git version control and the use of Gitlab."
+  },
+  {
+    "objectID": "responsibility-process.html#standard-operating-procedure-sop",
+    "href": "responsibility-process.html#standard-operating-procedure-sop",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.8 Standard Operating Procedure (SOP)",
+    "text": "4.8 Standard Operating Procedure (SOP)\nWhen a request for open publication of a repository is made, an Authorised Approver must follow the SOP set out below:\n\nRequest registration\n\nFill out an “Open Publication Review Pro Forma” (provided on request from an Authorised Approver or the OPL),\nSubmit pro forma to DRE Senior Leadership Team for approval,\nOnce approval has been granted, move to repository review;\n\nRepository review (review cycle),\n\nManually review all documents to check for sensitive or privileged information – for instance:\n\nAny data (even if anonymized) that has not been approved for release through standard Trust IG processes,\nPersonal sensitive information, including clinical information that could potentially identify an individual, patient or their family, unless consent is obtained to share this information,\nPersonal information that could potentially identify an individual or employee, unless consent is obtained to share this information (Personally Identifiable Information),\nAny legal advice provided to GOSH by either the GOSH Legal team or any external barrister/solicitor,\nany confidential business, contractual or financial information;\n\nManually check for the existence of relevant library requirements files (where appropriate) –\n\nrequirements.txt file for Python code,\nrenv.lock file for R code;\n\nManually check that there is a substantive README covering (where appropriate) –\n\nA description of the purpose of the repository,\nInstallation and usage instructions,\nThe GOSH DRE shared email (DRE SUPPORT EMAIL),\nReference to the relevant license (see next section);\n\nManually check that there is a relevant license file in the repository –\n\nAn MIT license (for code),\nAn Open Government 3.0 license and Crown copyright statement (for documentation);\n\nManually check that pre-commit hooks are in place to ensure that “secrets” and real data have not been included in the repository;\nIf any of the above checks result in identification of a non-compliant part of the repository, report this to the requestor for update;\nRepeat this step until no further non-compliant parts are identified;\n\nRegister approval\n\nComplete the Open Publication Checklist (Appendix 2) and submit to be stored alongside the project registration;\nAdd approval and date to the open publication register maintained by the OPL;\n\nUpload and open publication\n\nIf it is a new repository -\n\ncreate an appropriately named private repository on Github with the appropriate organization as owner –\n\ngosh-dre for DRE projects,\ngoshdrive for other projects,\n\nAdd the requestor as a developer (if they are not in the relevant organization),\nmerge the internal repository into the private repository on Github,\nEnable “Dependabot” alerts in the repository “Security” tab,\nCheck that the “Default notifications email” address is the Authorised Approver’s registered GOSH email address (this is an account-specific setting, not a repository-specific setting),\nswitch the repository to public in the “Settings” tab (you will be prompted to confirm your credentials and your switch),\nEnable “Secret scanning alerts” from the “Security” tab;\n\n\nOngoing review\n\nMonitor incoming security alert emails from Github (scans are run weekly by Microsoft) to ensure that the repository remains compliant with this SOP –\n\nnotify the requestor when the repository becomes non-compliant,\ncreate a “fix” branch to update the repository,\nwork with the requestor to ensure that the fix addresses all non-compliance,\nmerge the “fix” branch into the open repository.\n\n\n\n\n4.8.1 Data Breach and non-compliance\nThe process set out above includes multiple steps to reduce the risk of accidental data breach and publication of non-compliant material. However, there remains a very small risk that these may not be picked up by the project team or the Authorised Approver. If suspected data/non-compliant material is identified on an openly published repository (a “breach”), the following steps must be taken:\n\nImmediate steps (Authorised Approver) -\n\nSwitch the repository to “private”,\nNotify the project team,\nFollow the standard Trust procedure for data breach (Information Governance and Data Protection Policy - including reporting on Datix within 24 hours),\nNotify the Cybersecurity Team via email (CYBERSECURITY EMAIL) and\nNotify the Open Publication Lead;\n\nFollow up (Authorised Approver) –\n\nFollow the data breach process including any actions coming out of the Datix report, and\nReport to the Open Publication Lead on the source of the breach and the mechanism by which it was included;\n\nSubject to approval to republish (following any advice coming out of the data breach process – Authorised Approver) -\n\nUpdate the internal Gitlab version of the repo to remove non-compliant material/data, until it is compliant with the process defined above, and\nReplace the private Github version with the updated approved repo version from the internal Gitlab and republish;\n\nReporting (Open Publication Lead) –\n\nUpdate the responsibility process to reduce the risk of repeated breach, and\nReport the incident and follow up actions to the Data Partnerships Committee for consideration."
+  },
+  {
+    "objectID": "responsibility-process.html#sec-oprp-app-a",
+    "href": "responsibility-process.html#sec-oprp-app-a",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.9 Appendix A: Request for Open Publication Authoriser (“Authorised Approver”) Rights Form1",
+    "text": "4.9 Appendix A: Request for Open Publication Authoriser (“Authorised Approver”) Rights Form1\n\n4.9.1 Requestor Details\n\nName\nDate\nContact No.\nEmail address\nRole\nDepartment\nReason for request\n\n\n\n4.9.2 Information Security Statement\nIn order to perform my job duties and fulfill my responsibilities to GOSH, I am requesting open publication authorizer rights.\nBy signing this application, I acknowledge that I:\n\nhave read and agree to comply with the governance and security guidance set out in the ‘Open Publication Responsibility Process’ document, regarding the review and approval of open publication in the Trust,\nhave read the Trust’s Acceptable Use of ICT Policy and Information Security Policy and agree to abide by the rules and regulations that apply,\nwill ensure that all participants in the open publication process have received sufficient training in good software engineering practice and responsible publication.\n\nTo be signed by the requestor.\n\n\n4.9.3 Sign-off\nTo be signed off by the Open Publication Lead"
+  },
+  {
+    "objectID": "responsibility-process.html#sec-oprp-app-b",
+    "href": "responsibility-process.html#sec-oprp-app-b",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "4.10 Appendix B: Checklist for Open Publication",
+    "text": "4.10 Appendix B: Checklist for Open Publication"
+  },
+  {
+    "objectID": "responsibility-process.html#footnotes",
+    "href": "responsibility-process.html#footnotes",
+    "title": "4  “Major Version” Open Publication Responsibility Process",
+    "section": "",
+    "text": "In internal documentation this Appendix is presented as a PDF form to be filled out and submitted to the Open Publication Lead.↩︎"
+  },
+  {
+    "objectID": "publication-process.html#description",
+    "href": "publication-process.html#description",
+    "title": "2  Open publication full process",
+    "section": "2.1 Description",
+    "text": "2.1 Description\nThis page sets out the overall process for open publication, with reference to the included documents (Chapter 5 and Chapter 4). For the sake of completeness it includes the process for registering an “authorised approver” who takes responsibility for the adherence of the candidate repository to the open publication specification."
+  },
+  {
+    "objectID": "publication-process.html#steps",
+    "href": "publication-process.html#steps",
+    "title": "2  Open publication full process",
+    "section": "2.2 Steps",
+    "text": "2.2 Steps\n\n2.2.1 Approved authoriser registration\nPlease note, a prerequisite of this process is that a senior staff member (“Open Publication Lead” - OPL) takes overall responsibility for administering the open oublication process including the authorisation of approvers and undertaking registration of open publication candidates.\n\nProspective “authorised approver” reads, agrees to and signs the Open Publication Responsibility Process (Chapter 4);\nThe open publication lead reviews the request and authorises appropriately.\n\n\n\n2.2.2 Repository registration\n\nAn open publication registration pro forma (Chapter 5) is filled out and submitted to an appropriate oversight committee in the Trust;\nThe pro forma is reviewed and if no objections the repository is registered (with suitable records kept by the open publication lead).\n\n\n\n2.2.3 Open publication approval\n\nThe repository is reviewed by an assigned authorised approver against the criteria set out in the open publication responsibility process;\nIf any criteria are not satisfied then issues are addressed between the authorised approver and the development team;\nOnce all criteria are passed, the repository is considered approved for open publication.\n\n\n\n2.2.4 Open publication\n\nA private repository is created in Github and the approved version of the repository is uploaded as a snapshot;\nThe relevant process for setting up regular repository checks is set up in Github;\nThe repository is published as a public repository."
+  }
+]

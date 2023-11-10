@@ -6,6 +6,8 @@ This repository brings together materials supporting the open publication proces
 
 As detailed herein, while our process authorises open publication, it does not authorise open coding, so continued development will happen internally within GOSH, and be updated as and when new major versions of the documentation are in place.
 
+Please see [the rendered site](https://gosh-dre.github.io/open-publication-policy/) for the full documentation.
+
 For more information, please contact [DRESupport\@gosh.nhs.uk](mailto:DRESupport@gosh.nhs.uk).
 
 ## Licence
